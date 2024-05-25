@@ -1,3 +1,9 @@
+/*
+Code balance factor in tree
+create inorder, count and depth
+given tree it returns balance or not
+if balance factor is from +1,0,-1than balanced else not
+*/
 package Assignment;
 
 import java.util.Scanner;
