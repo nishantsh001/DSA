@@ -83,7 +83,7 @@ public class Linear_Linked_List {
 	void search(int key) {
 		if(root == null) 
 		{
-			System.err.println("Empty");
+			System.out.println("Empty");
 		}
 		else 
 		{
@@ -110,6 +110,7 @@ public class Linear_Linked_List {
 			
 			while (tNode!=null && tNode.data !=key)
 			{
+				t2 = tNode;
 				tNode = tNode.next;
 			}
 			
