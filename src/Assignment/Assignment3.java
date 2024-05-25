@@ -60,7 +60,7 @@ public class Assignment3 {
 		}
 		else {
 			Node tNode = rootNode;
-			while(tNode!=null) {
+			while(tNode.nextNode!=null) {
 				tNode = tNode.nextNode;
 			}
 			tNode.nextNode = node;
@@ -147,6 +147,19 @@ public class Assignment3 {
 				
 				assignment3.insert_right( nameString, geString, salary);
 				break;
+				
+			case 2:
+				System.out.println("search using Id");
+				int id = scanner.nextInt();
+				assignment3.search(id);
+				break;
+				
+			case 3:
+				System.out.println("Delete using id ");
+			    id = scanner.nextInt();
+			    assignment3.deleteSpecific(id);
+			    break;
+			    
 			case 4:
 				System.out.println("Details ");
 				assignment3.printList();
